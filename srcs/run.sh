@@ -5,7 +5,6 @@ ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/
 cp -r wordpress /var/www/localhost/wordpress
 cp -r phpmyadmin /var/www/localhost/phpmyadmin
 service mysql start
-mariadb
 bash create_db.sh
 cd certificate
 chmod +x mkcert
