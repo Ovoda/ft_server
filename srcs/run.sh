@@ -1,6 +1,5 @@
 #!/bin/sh
 mkdir /var/www/localhost
-# cp index.html /var/www/localhost/index.html
 cp localhost /etc/nginx/sites-available/localhost
 ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/
 cp -r wordpress /var/www/localhost/wordpress
@@ -20,4 +19,4 @@ service nginx start
 /etc/init.d/php7.3-fpm start
 rm -rf wordpress
 rm -rf phpmyadmin
-tail -f /var/log/nginx/access.log /var/log/nginx/error.log;
+tail -f /var/log/nginx/access.log /var/log/nginx/error.log
